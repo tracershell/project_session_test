@@ -53,7 +53,7 @@
 
 <body>
 
-  <form action="/login" method="POST">  <!--req.body 로 {username, password} 을 실어 router 로 전달 --> 
+  <form action="/login" method="POST">  <!-- body 에 {name=username&password=pw} 을 실어 router 로 전달 --> 
     <h2>로그인</h2>
     <input type="text" name="username" placeholder="아이디" required />
     <input type="password" name="password" placeholder="비밀번호" required />

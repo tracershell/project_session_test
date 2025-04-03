@@ -23,7 +23,7 @@ const loginUser = async (req, res) => {   // router 로 부터 연결된 loginUs
     }
     }
 
-    req.session.user = {    // 로그인 성공시 req.session.user 에 id, username, role 에 값들을 저장
+    req.session.user = {    // 로그인 성공시 req.session.user 에 id, username, role 에 값들을 저장 : express session 개체체
       id: user.id,
       username: user.username,
       role: user.role
